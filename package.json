@@ -22,7 +22,12 @@
     "i18n": "^0.8.3",
     "lodash": "^4.17.11",
     "method-override": "^3.0.0",
-    "mongoose": "^5.6.1"
+    "mongoose": "^5.6.1",
+    "apidoc": "^0.17.7",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "*",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.18.10"
   },
   "devDependencies": {
     "apidoc": "^0.17.7",
