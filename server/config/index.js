@@ -13,7 +13,7 @@ module.exports = {
     env,
     port,
     jwtCredentials: {
-        publicKey: FS.readFileSync(Path.resolve(__dirname, '..', 'config', 'cert', `${env}.public.key`), 'utf8')
+        // publicKey: FS.readFileSync(Path.resolve(__dirname, '..', 'config', 'cert', `${env}.public.key`), 'utf8')
     },
     db: DB[env],
     constants: Constants[env],
