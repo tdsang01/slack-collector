@@ -1,0 +1,8 @@
+{
+  "name": "Slack collector",
+  "version": "1.0.0",
+  "description": "Slack collector API documentation.",
+  "template": {
+    "forceLanguage": "en"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "TECHNICAL_EXCEPTION": "Oops! Something went wrong, please try again.",
+  "USER_NOT_FOUND": "Sorry, the user is not found",
+  "INVALID_PARAMS": "The params is invalid.",
+  "AUTHENTICATION_FAILED": "Authentication failed. Please try again.",
+  "ACTION_FAILED": "Action failed, please try again."
+}
