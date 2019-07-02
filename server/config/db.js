@@ -3,7 +3,7 @@ dotEnv.config();
 
 const db = {
     development: {
-        URL: process.env.MONGODB_URL,
+        URL: process.env.MONGODB_URI,
     },
     test: {
         URI: '',
@@ -11,7 +11,7 @@ const db = {
     },
     staging: {},
     production: {
-        URL: process.env.MONGODB_URL,
+        URL: process.env.MONGODB_URI,
     }
 };
 

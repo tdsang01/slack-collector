@@ -4,6 +4,22 @@ import { SlackService } from '../services';
 import { success } from '../helpers/response';
 
 export default class CollectorController {
+    static async webhook(req, res, next) {
+        try {
+            const message = get(req, 'body.event');
+            console.log({message});
+            if (message) {
+                const result = await messageRepo._create(message);
+                console.log({result});
+            }
+            return res.status(200).json({
+                challenge: req.body.challenge
+            });
+        } catch(e) {
+            return next(e);
+        }
+    }
+
     static async collectChannels(req, res, next) {
         success(res);
         console.log('start');

@@ -1,3 +1,5 @@
+import { omit } from 'lodash';
+
 export default class BaseRepo {
     constructor(model) {
         this._model = model;
