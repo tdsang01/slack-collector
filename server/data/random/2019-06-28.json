@@ -1,0 +1,42 @@
+[
+    {
+        "client_msg_id": "ef1b36ff-19e5-4d24-aaa5-75dcd1814bff",
+        "type": "message",
+        "text": "fff",
+        "user": "UKW48PB46",
+        "ts": "1561711721.000200",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "ab7896fa-b5c3-4895-b204-6b21ace6744e",
+        "type": "message",
+        "text": "2",
+        "user": "UKW48PB46",
+        "ts": "1561713909.000400",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "7b4464b5-d189-4a2c-87ff-5bbc954ca209",
+        "type": "message",
+        "text": "w",
+        "user": "UKW48PB46",
+        "ts": "1561713956.000600",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "3511485d-9b25-401e-b4ca-30ca3f8e6930",
+        "type": "message",
+        "text": "2",
+        "user": "UKW48PB46",
+        "ts": "1561714362.000800",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "1c43be97-1824-49ae-84d5-28d2b5c64553",
+        "type": "message",
+        "text": "hello",
+        "user": "UKW48PB46",
+        "ts": "1561714520.001000",
+        "team": "TKGH90490"
+    }
+]

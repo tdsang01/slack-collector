@@ -1,0 +1,26 @@
+[
+    {
+        "client_msg_id": "f3435894-3edc-4afb-9539-f8461ebf5c1b",
+        "type": "message",
+        "text": "gg",
+        "user": "UKW48PB46",
+        "ts": "1561711723.000200",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "7df8432f-d582-4ca3-b984-16fd7472a09b",
+        "type": "message",
+        "text": "3",
+        "user": "UKW48PB46",
+        "ts": "1561713912.000400",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "b3b5614e-3d64-4856-ae4b-6a9c984da659",
+        "type": "message",
+        "text": "1",
+        "user": "UKW48PB46",
+        "ts": "1561713943.000600",
+        "team": "TKGH90490"
+    }
+]

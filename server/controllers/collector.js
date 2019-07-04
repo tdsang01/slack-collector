@@ -1,13 +1,15 @@
+import Path from 'path';
+import FS from 'fs';
 import { get } from 'lodash';
 import { channelRepo, messageRepo } from '../repositories';
 import { SlackService } from '../services';
 import { success } from '../helpers/response';
+import { Message } from '../models';
 
 export default class CollectorController {
     static async webhook(req, res, next) {
         try {
             const message = get(req, 'body.event');
-            console.log({message});
             if (message) {
                 const result = await messageRepo._create(message);
                 console.log({result});
@@ -20,7 +22,7 @@ export default class CollectorController {
         }
     }
 
-    static async collectChannels(req, res, next) {
+    static async collectChannelsFromApi(req, res, next) {
         success(res);
         console.log('start');
         let cursor = null;
@@ -30,6 +32,7 @@ export default class CollectorController {
                 console.log('start while: ', i);
                 const responseData = await SlackService.getListChannels(cursor);
                 if (!responseData.ok) {
+                    console.error(responseData);
                     break;
                 }
                 await channelRepo._insertMany(responseData.channels);
@@ -46,7 +49,7 @@ export default class CollectorController {
         }
     }
 
-    static async collectMessages(req, res, next) {
+    static async collectMessagesFromApi(req, res, next) {
         try {
             success(res);
             const channels = await channelRepo._getAll({
@@ -71,7 +74,7 @@ export default class CollectorController {
                             listThreadTs.push(item.thread_ts);
                         }
                     }
-                    await CollectorController.collectReplyMessages(channel.id, listThreadTs);
+                    await CollectorController.collectReplyMessagesFromApi(channel.id, listThreadTs);
                     console.log(`end ${channel.id} while ${i}`);
                     cursor = get(responseData, 'response_metadata.next_cursor');
                     if (!cursor) {
@@ -85,7 +88,7 @@ export default class CollectorController {
         }
     }
 
-    static async collectReplyMessages(channelId, listThreadTs) {
+    static async collectReplyMessagesFromApi(channelId, listThreadTs) {
         try {
             let i = 1;
             let cursor = null;
@@ -110,6 +113,110 @@ export default class CollectorController {
             }
         } catch (e) {
             console.error(e);
+        }
+    }
+
+    static async collectChannelsFromFileExport(req, res, next) {
+        try {
+            success(res);
+            const checkExistsChannel = await channelRepo._getOne();
+            if (checkExistsChannel) {
+                return;
+            }
+            const pathFile = Path.resolve(__dirname, '..', 'data', 'channels.json');
+            const channels = require(pathFile);
+            await channelRepo._insertMany(channels);
+        } catch(e) {
+            console.error(e);
+        }
+    }
+
+    static async collectMessagesEachChannelFromFileExport(req, res, next) {
+        try {
+            success(res);
+            const channel = await channelRepo._getOne({
+                where: {
+                    id: Message.DEFAULT_CHANNEL_ID,
+                },
+                select: 'id name'
+            });
+            if (!channel) {
+                return;
+            }
+            const pathDir = Path.resolve(__dirname, '..', 'data', channel.name);
+            console.log({pathDir});
+            FS.readdir(pathDir, (e, fileNames) => {
+                if (e) {
+                    return;
+                }
+                for (const fileName of fileNames) {
+                    const messages = require(`${pathDir}/${fileName}`);
+                    messageRepo._insertMany(messages);
+                }
+            });
+        } catch(e) {
+            console.error(e);
+        }
+    }
+
+    static async collectMessagesAllChannelFromFileExport(req, res, next) {
+        try {
+            success(res);
+            const channels = await channelRepo._getAll({
+                select: 'id name'
+            });
+            for (const channel of channels) {
+                const pathDir = Path.resolve(__dirname, '..', 'data', channel.name);
+                console.log({pathDir});
+                FS.readdir(pathDir, async (e, fileNames) => {
+                    if (e) {
+                        return;
+                    }
+                    for (const fileName of fileNames) {
+                        const messages = require(`${pathDir}/${fileName}`);
+                        if (Array.isArray(messages)) {
+                            const newMessages = messages.map(item => ({...item, channel: channel.id }));
+                            await messageRepo._insertMany(newMessages);
+                        }
+                    }
+                });
+            }
+        } catch(e) {
+            console.error(e);
+        }
+    }
+
+    static async getAll(req, res, next) {
+        try {
+             const results = await messageRepo._getAll({
+                 sort: { ts: -1 }
+             });
+             return success(res, results);
+        } catch(e) {
+            return next(e);
+        }
+    }
+
+    static async getAllByChannelId(req, res, next) {
+        try {
+            const results = await messageRepo._getAll({
+                where: {
+                    channel: req.params.id,
+                    thread_ts: { $exists: false }
+                },
+                sort: { ts: -1 }
+            });
+            return success(res, results);
+        } catch(e) {
+            return next(e);
+        }
+    }
+    
+    static async getDetailMessage(req, res, next) {
+        try {
+             
+        } catch(e) {
+            return next(e);
         }
     }
 }

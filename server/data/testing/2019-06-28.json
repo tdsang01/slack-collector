@@ -1,0 +1,272 @@
+[
+    {
+        "client_msg_id": "0013b54a-b59a-4342-8654-d6714c883b41",
+        "type": "message",
+        "text": "Duoc roi ne",
+        "user": "UKW48PB46",
+        "ts": "1561709312.000200",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "a52e4ee4-725a-432a-b473-94d26b1241a0",
+        "type": "message",
+        "text": "aaaaaaa",
+        "user": "UKW48PB46",
+        "ts": "1561711717.000400",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "f12fc952-06ea-4a1e-b858-e1df28fcd508",
+        "type": "message",
+        "text": "a",
+        "user": "UKW48PB46",
+        "ts": "1561712522.000600",
+        "team": "TKGH90490"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_add",
+        "text": "added an integration to this channel: <https:\/\/sang-early.slack.com\/services\/BKZAR9A21|collector>",
+        "user": "UKW48PB46",
+        "bot_id": "BKZAR9A21",
+        "bot_link": "<https:\/\/sang-early.slack.com\/services\/BKZAR9A21|collector>",
+        "ts": "1561712547.000700"
+    },
+    {
+        "client_msg_id": "4dc44b5c-df04-4be6-b3a7-c0449e1ad123",
+        "type": "message",
+        "text": "Hello",
+        "user": "UKW48PB46",
+        "ts": "1561712608.000900",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "97886a13-f66e-453c-b373-32164559afd0",
+        "type": "message",
+        "text": "a",
+        "user": "UKW48PB46",
+        "ts": "1561712678.001100",
+        "team": "TKGH90490"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_remove",
+        "text": "removed an integration from this channel: <https:\/\/sang-early.slack.com\/services\/BKZAR9A21|collector>",
+        "user": "UKW48PB46",
+        "bot_id": "BKZAR9A21",
+        "bot_link": "<https:\/\/sang-early.slack.com\/services\/BKZAR9A21|collector>",
+        "ts": "1561713218.001200"
+    },
+    {
+        "client_msg_id": "7d12b77c-3990-4855-946e-5e26f9abaa06",
+        "type": "message",
+        "text": "1",
+        "user": "UKW48PB46",
+        "ts": "1561713564.001400",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "c426d00b-ae6e-49ad-91d5-2403dfaa3af2",
+        "type": "message",
+        "text": "2",
+        "user": "UKW48PB46",
+        "ts": "1561713576.001600",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "2a70e75d-1ceb-44b4-b0eb-c6fcd45d6aa4",
+        "type": "message",
+        "text": "3",
+        "user": "UKW48PB46",
+        "ts": "1561713771.001800",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "0dc55abc-9c4d-4ea3-83d6-9a19e53cf2eb",
+        "type": "message",
+        "text": "1",
+        "user": "UKW48PB46",
+        "ts": "1561713906.002000",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "b6552aa3-a547-48c1-939f-ad1e4f5fee0a",
+        "type": "message",
+        "text": "e",
+        "user": "UKW48PB46",
+        "ts": "1561713958.002200",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "71215e0e-bc0f-42af-9d97-74354cff5863",
+        "type": "message",
+        "text": "a",
+        "user": "UKW48PB46",
+        "ts": "1561714348.002400",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "e0949eb9-6559-4e95-8176-163487cfc54d",
+        "type": "message",
+        "text": "Jaha",
+        "user": "UKW48PB46",
+        "ts": "1561714544.002600",
+        "team": "TKGH90490"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FKT0Z0U8Z",
+                "created": 1561714567,
+                "timestamp": 1561714567,
+                "name": "naruto.jpg",
+                "title": "naruto.jpg",
+                "mimetype": "image\/jpeg",
+                "filetype": "jpg",
+                "pretty_type": "JPEG",
+                "user": "UKW48PB46",
+                "editable": false,
+                "size": 41032,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/TKGH90490-FKT0Z0U8Z\/naruto.jpg?t=xoxe-662587004306-675773747905-683975749543-5628ac5ddef1f657c676949486311885",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/TKGH90490-FKT0Z0U8Z\/download\/naruto.jpg?t=xoxe-662587004306-675773747905-683975749543-5628ac5ddef1f657c676949486311885",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/TKGH90490-FKT0Z0U8Z-d9bfe1724e\/naruto_64.jpg?t=xoxe-662587004306-675773747905-683975749543-5628ac5ddef1f657c676949486311885",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/TKGH90490-FKT0Z0U8Z-d9bfe1724e\/naruto_80.jpg?t=xoxe-662587004306-675773747905-683975749543-5628ac5ddef1f657c676949486311885",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/TKGH90490-FKT0Z0U8Z-d9bfe1724e\/naruto_360.jpg?t=xoxe-662587004306-675773747905-683975749543-5628ac5ddef1f657c676949486311885",
+                "thumb_360_w": 206,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/TKGH90490-FKT0Z0U8Z-d9bfe1724e\/naruto_480.jpg?t=xoxe-662587004306-675773747905-683975749543-5628ac5ddef1f657c676949486311885",
+                "thumb_480_w": 275,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/TKGH90490-FKT0Z0U8Z-d9bfe1724e\/naruto_160.jpg?t=xoxe-662587004306-675773747905-683975749543-5628ac5ddef1f657c676949486311885",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/TKGH90490-FKT0Z0U8Z-d9bfe1724e\/naruto_720.jpg?t=xoxe-662587004306-675773747905-683975749543-5628ac5ddef1f657c676949486311885",
+                "thumb_720_w": 412,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/TKGH90490-FKT0Z0U8Z-d9bfe1724e\/naruto_800.jpg?t=xoxe-662587004306-675773747905-683975749543-5628ac5ddef1f657c676949486311885",
+                "thumb_800_w": 458,
+                "thumb_800_h": 800,
+                "image_exif_rotation": 1,
+                "original_w": 480,
+                "original_h": 839,
+                "permalink": "https:\/\/sang-early.slack.com\/files\/UKW48PB46\/FKT0Z0U8Z\/naruto.jpg",
+                "permalink_public": "https:\/\/slack-files.com\/TKGH90490-FKT0Z0U8Z-c67ff4dae9",
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "UKW48PB46",
+        "display_as_bot": false,
+        "ts": "1561714569.002700",
+        "client_msg_id": "28229cc2-56b3-46cc-8e6c-1feb50ef9fd4",
+        "thread_ts": "1561714569.002700",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1561714588.003100",
+        "reply_users": [
+            "UKW48PB46"
+        ],
+        "replies": [
+            {
+                "user": "UKW48PB46",
+                "ts": "1561714588.003100"
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c69f17ec-e51d-4055-b669-e03ca1e843cd",
+        "type": "message",
+        "text": "dep qua",
+        "user": "UKW48PB46",
+        "ts": "1561714588.003100",
+        "team": "TKGH90490",
+        "thread_ts": "1561714569.002700",
+        "parent_user_id": "UKW48PB46"
+    },
+    {
+        "client_msg_id": "da2cccd9-7d85-479f-9b3e-0a9e3d3d4fa3",
+        "type": "message",
+        "text": "Qua dep luon",
+        "user": "UKW48PB46",
+        "ts": "1561715822.003400",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "c6357dde-7e9c-48ce-baea-08b7f658ecac",
+        "type": "message",
+        "text": "Chao cac ban",
+        "user": "UKW48PB46",
+        "ts": "1561715940.003600",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "4f7c437a-f191-434b-b643-0cb7a0773d90",
+        "type": "message",
+        "text": "Haha",
+        "user": "UKW48PB46",
+        "ts": "1561715993.003800",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "b4d67562-73ab-403e-9186-01b4b20046a3",
+        "type": "message",
+        "text": "Haizzz",
+        "user": "UKW48PB46",
+        "ts": "1561716030.004000",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "c15f6db9-6cbc-4388-8be8-2ec49fb4a6c1",
+        "type": "message",
+        "text": "Buon qua",
+        "user": "UKW48PB46",
+        "ts": "1561716082.004200",
+        "team": "TKGH90490"
+    },
+    {
+        "client_msg_id": "547d185e-07eb-47ee-a7f6-2c1dbb760e6f",
+        "type": "message",
+        "text": "Hiu hiu sai roi",
+        "user": "UKW48PB46",
+        "ts": "1561716600.004400",
+        "team": "TKGH90490",
+        "thread_ts": "1561716600.004400",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1561716627.004600",
+        "reply_users": [
+            "UKW48PB46"
+        ],
+        "replies": [
+            {
+                "user": "UKW48PB46",
+                "ts": "1561716627.004600"
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ec5afe27-9d77-411c-b84d-09eb7450cd3f",
+        "type": "message",
+        "text": "Reply phat xem sao",
+        "user": "UKW48PB46",
+        "ts": "1561716627.004600",
+        "team": "TKGH90490",
+        "thread_ts": "1561716600.004400",
+        "parent_user_id": "UKW48PB46"
+    },
+    {
+        "client_msg_id": "c5cdd11f-1e9e-443a-9ed1-5947a837c1a3",
+        "type": "message",
+        "text": "Toi ngu qua :disappointed:",
+        "user": "UKW48PB46",
+        "ts": "1561716731.005000",
+        "team": "TKGH90490"
+    }
+]

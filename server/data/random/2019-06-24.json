@@ -1,0 +1,16 @@
+[
+    {
+        "user": "UKW48PB46",
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1561362248.000200",
+        "text": "<@UKW48PB46> has joined the channel"
+    },
+    {
+        "user": "UKU0E5WNR",
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1561362541.000400",
+        "text": "<@UKU0E5WNR> has joined the channel"
+    }
+]

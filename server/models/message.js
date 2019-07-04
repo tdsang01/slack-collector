@@ -1,6 +1,13 @@
 import Mongoose from './init-mongoose';
 
+const DEFAULT_CHANNEL_ID = 'CKW48PPGE';
+
 const schema = new Mongoose.Schema({
+    channel: {
+        type: String,
+        maxlength: 30,
+        default: DEFAULT_CHANNEL_ID,
+    },
     type: {
         type: String,
         maxlength: 50
@@ -228,5 +235,8 @@ const schema = new Mongoose.Schema({
         maxlength: 50
     }]
 });
+schema.statics = {
+    DEFAULT_CHANNEL_ID
+};
 
 module.exports = Mongoose.model('Message', schema);

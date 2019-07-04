@@ -12,9 +12,6 @@ const schema = new Mongoose.Schema({
         required: true,
         maxlength: 512,
     },
-    is_channel: {
-        type: Boolean
-    },
     created: {
         type: Number,
         maxlength: 30
@@ -25,32 +22,9 @@ const schema = new Mongoose.Schema({
     is_general: {
         type: Boolean
     },
-    unlinked: {
-        type: Number,
-        maxlength: 10
-    },
     creator: {
         type: String,
         maxlength: 128
-    },
-    name_normalized: {
-        type: String,
-        maxlength: 128
-    },
-    is_shared: {
-        type: Boolean
-    },
-    is_org_shared: {
-        type: Boolean
-    },
-    is_member: {
-        type: Boolean
-    },
-    is_private: {
-        type: Boolean
-    },
-    is_mpim: {
-        type: Boolean
     },
     topic: {
         value: {
@@ -80,13 +54,10 @@ const schema = new Mongoose.Schema({
             maxlength: 30
         }
     },
-    previous_names: {
-        type: Array
-    },
-    num_members: {
-        type: Number,
-        maxlength: 10
-    }
+    members: [{
+        type: String,
+        maxlength: 50
+    }]
 });
 
 module.exports = Mongoose.model('Channel', schema);
